@@ -1,0 +1,41 @@
+h1{
+    color :forestgreen;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:4vw;
+    font-weight:bold;
+    font-style: normal;
+
+}
+hr {
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color: gray
+   }
+   .intro{
+    font-size: larger;
+    font-style:italic;
+    color:cornsilk;
+     }
+  .myheader{
+    color:cornsilk;
+   }
+   .myclasses{
+       list-style-type:none;
+    }
+    .movies
+    {
+        list-style-type:decimal;
+    }
+    .watch{
+        font-style: italic;
+        line-height: 0.5;
+    }
+   body {
+    background-color:darkgrey;
+    }
+    div {
+        font-size: 25px;
+      }
+
+      
