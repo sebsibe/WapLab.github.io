@@ -5,7 +5,7 @@ h1{
     font-weight:bold;
     font-style: normal;
 
-}
+ }
 hr {
     height:2px;
     border-width:0;
@@ -23,14 +23,20 @@ hr {
    .myclasses{
        list-style-type:none;
     }
+    span{
+        text-decoration: none;
+    }
     .movies
     {
         list-style-type:decimal;
+       
+       
     }
     .watch{
         font-style: italic;
         line-height: 0.5;
     }
+    
    body {
     background-color:darkgrey;
     }
@@ -38,4 +44,24 @@ hr {
         font-size: 25px;
       }
 
-      
+      p::first-letter {
+        font-size: 1.5em;
+       
+      }
+   a{
+       text-decoration: none
+    }
+    a:hover {
+        text-decoration:underline;
+    }
+    ul.moviesli{
+        text-indent: -20px;
+        list-style-type:none;
+    }
+    #hovdiv {
+        display: none;
+    }
+    
+    a#hov:hover + #hovdiv{
+        display :contents;
+    }
