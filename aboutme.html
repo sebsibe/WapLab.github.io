@@ -1,54 +1,73 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<title>About Me</title> 
-<link href="./styleme.css" type="text/css" rel ="stylesheet"/>
-<h1>About Sebsibe Getachew Haile</h1>
-<p class="intro">My name is Sebsibe I am  currently practicing html and css, 
-    it all seems good and hopefully I will master it in a short time...</p>
-
-<hr>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+    <link href="./styleme.css" type="text/css" rel="stylesheet" />
 </head>
-<body>
-<div >
-  <p class="myheader"> My Classes This Quarter</p>  
-  <ul class="myclasses">
-      
-    <li>CS390 Fundamentals of Programming</li>
-    <li>CS401 Modern Programming Practices</li>
-    <li>CS472 Web Application Programming</li>
-</ul>
-</div>
-<div>
-    <p class="myheader"> My Favorite Movies</p> 
-    <p class="watch">Currently, I am not watching movies because I am very busy</p>
-    <ul class="movies">
-        <li>Prison break</li>
-        <li>Breaking bad</li>
-        <li>Concussion</li>
-    </ul>
-</div>
-    
- <div >
-        
-        <p class="myheader"> My Moods</p> 
-        <img src="happy.jpg" alt="happy photo">
-        <img src="sad.jpg" alt="sad photo">
-</div>
-<div>
-    <p class="myheader"> Fun Facts About My Friends</p> 
-    <p class="watch">Anteneh loves exploring life and always goes out for vacation.</p>
-    <p class="watch">Ashebir doesn't like to travel but both of them lived together for 5years.</p>
-    
-</div>   
 
-<footer>
-    
-    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fsebsibe.github.io%2FWapLab.github.io%2Faboutme">                                   
-  <img src="https://www.w3.org/Icons/valid-html20" alt="html validator"/>
-  </a>
-   </footer>
+<body>
+    <h1>About Sebsibe Getachew Haile</h1>
+    <p class="intro">My name is Sebsibe I am currently practicing html and css,
+        it all seems good and hopefully I will master it in a short time...</p>
+    <hr>
+    <div>
+        <span class="myheader"> My Classes This Quarter</span>
+        <ul class="myclasses">
+            <li>CS390 Fundamentals of Programming</li>
+            <li>CS401 Modern Programming Practices</li>
+            <li>CS472 Web Application Programming</li>
+        </ul>
+    </div>
+    <div>
+        <span class="myheader"> My Favorite Movies</span>
+        <p class="watch">Currently, I am not watching movies because I am very busy</p>
+
+        <ol reversed class="movies">
+            <li>Prison break <a id="hov" href="#">(IMDB)</a>
+                <ul id="hovdiv">
+                    <li>hovering over me....</li>
+                </ul>
+            </li>
+            <li>Breaking Bad <span><a href="#">(IMDB)</a></span></li>
+            <li>Concussion <span><a href="#">(IMDB)</a></span>
+                <ul class="moviesli">
+                    <li><strong>Director</strong> <br> Peter Landesman</li>
+                    <li><strong>Genre</strong> <br> Sports drama</li>
+                    <li><strong>Main Character</strong><br> Will Smith</li>
+                </ul>
+            </li>
+
+
+        </ol>
+
+    </div>
+
+    <div>
+
+        <div> <span class="myheader"> My Moods</span> </div>
+        Happy:
+        <img src="happy.jpg" alt="happy photo">
+        Sad:
+        <img src="sad.jpg" alt="sad photo">
+    </div>
+    <div>
+        <span class="myheader"> Fun Facts About My Friends</span>
+        <p class="watch">Anteneh loves exploring life and always goes out for vacation.</p>
+        <p class="watch">Ashebir doesn't like to travel but both of them lived together for 5years.</p>
+
+
+    </div>
+    <footer>
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fsebsibe.github.io%2FWapLab.github.io%2F">
+            <img src="https://www.w3.org/Icons/valid-html20" alt="html validator" />
+            <img src="css_checker.png" alt="css validator">
+
+        </a>
+    </footer>
 
 </body>
+
 </html>
