@@ -1,0 +1,447 @@
+/* --- CSS RESET --- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Patua One';
+    src: url('./fonts/PatuaOne.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lobster Two';
+    src: url('./fonts/LobsterTwo.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Libre Franklin';
+    src: url('./fonts/LibreFranklin.ttf') format('truetype');
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    background-color: #191716;
+    color:darkgrey;
+   
+    /*color: whitesmoke;*/
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.35rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 1rem;
+    font-family: 'Patua One', cursive;
+    color: #407c4a;
+}
+
+p {
+    margin: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px dashed black;
+    color: #01F7FA;
+    cursor: pointer;
+}
+
+header {
+    height: 100vh;
+    background-image: url("./images/header.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    font-family: 'Libre Franklin', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+header h1,
+header h2 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+article {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+article:nth-child(even) {
+    background-color: rgb(34, 33, 32);
+    padding: 1.25rem 0;
+}
+
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    background-color: black;
+
+    position: relative;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    /*color: whitesmoke;*/
+    color:darkgrey;
+    padding: 1rem;
+}
+
+footer a:hover {
+    border-bottom: 2px dashed white;
+}
+
+.design-selection nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+}
+
+
+.design-selection nav ul li {
+    display: list-item;
+    padding: 1rem;
+    margin: 0 2rem;
+    font-family: 'Lobster Two', cursive;
+    border-bottom: 2px solid #2d2c2b;
+}
+
+.design-selection nav ul li:after {
+    border-bottom: 2px solid #2d2c2b;
+}
+
+.design-selection nav ul li a:first-child {
+    display: block;
+    text-transform: uppercase;
+}
+
+.design-archives nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.zen-resources ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.zen-resources ul li {
+    margin: 0 1rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.65rem;
+        margin: 1rem 2.5rem;
+    }
+
+    aside {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        margin: 0 auto;
+    }
+
+    .design-archives nav ul,
+    .zen-resources ul {
+        display: block;
+    }
+
+    .design-archives nav ul li,
+    .zen-resources ul li {
+        display: list-item;
+        padding: 1rem;
+        margin: 0 2rem;
+        font-family: 'Lobster Two', cursive;
+        border-bottom: 2px solid #2d2c2b;
+    }
+
+    aside h3 {
+        text-align: center;
+        margin: 1rem;
+    }
+
+    p {
+        margin: 1rem 2.5rem;
+    }
+
+    footer {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header header header header header header"
+            "summary summary summary summary summary summary aside"
+            "preamble preamble explanation explanation explanation explanation aside"
+            "participation participation participation participation benefits benefits aside"
+            "requirements requirements requirements requirements requirements requirements aside"
+            "footer footer footer footer footer footer footer"
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    .summary {
+        grid-area: summary;
+    }
+
+    .preamble {
+        grid-area: preamble;
+    }
+
+    .explanation {
+        grid-area: explanation;
+    }
+
+    .participation {
+        grid-area: participation;
+    }
+
+    .benefits {
+        grid-area: benefits;
+    }
+
+    .requirements {
+        grid-area: requirements;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+    aside {
+        grid-area: aside;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .design-selection {
+        margin: 1rem 0;
+    }
+
+    .design-archives,
+    .zen-resources {
+        margin: 2rem 0;
+    }
+
+    article {
+        background-color: #191716 !important;
+    }
+
+    .preamble,
+    .explanation,
+    .benefits,
+    .participation,
+    .requirements {
+        background-color: rgb(34, 33, 32) !important;
+    }
+
+    .summary {
+        border-left: 2px solid #407c4a;
+        margin: 1.5rem 2.5rem;
+        padding: 0 !important;
+    }
+
+    .summary p {
+        margin: 1rem 2rem;
+    }
+}
