@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <link href="fstyle.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Workshop Registration</h1>
+    </header>
+    <article>
+        <h3>Register now while seats are available!</h3>
+        <form action="#" class="formarea">
+            <div class="detailform">
+
+                <label>First name<span>*</span>: </label>
+                <input type="text" name="firstName" required /><br />
+
+
+
+
+                <label>Last name<span>*</span>: </label>
+                <input type="text" name="lastName" required /><br />
+
+
+
+                <label>Company/Institution<span>*</span>: </label>
+                <input type="text" name="company" required /><br />
+
+
+
+                <label>Address<span>*</span>: </label>
+                <textarea class="address" required> type address here...</textarea><br />
+
+
+
+
+                <P><label>Country: </label>
+                    <select name="country">
+                        <option selected>Select country</option>
+                        <option>Ethiopia</option>
+                        <option>US</option>
+                        <option>China</option>
+                        <option>Canada</option>
+                    </select>
+                </P>
+
+
+
+                <P><label>State/Province/Region: </label>
+                    <select name="region">
+                        <option selected>Select region</option>
+                        <option>ILLinios</option>
+                        <option>Minnesota</option>
+                        <option>California</option>
+                        <option>Alaska</option>
+                    </select>
+                </P>
+                <label>City: </label>
+                <input type="text" name="city" required /><br />
+
+
+                <label>Email<span>*</span>: </label>
+                <input type="text" name="email"
+                    required /><br />
+
+                <label>Phone number<span>*</span>: </label>
+                <input type="text" name="phone" required /><br />
+                <P class="buttons">
+                    <input type="submit" name="submit" value="submit" />
+                    <input type="reset" name="reset" value="reset" />
+                </P>
+            </div>
+            <div class="meal">
+                <div class="meal">
+                    <h3>Lunch</h3>
+                    <label>Meal preference: </label>
+                    <select name="meal">
+                        <option selected>Vegeterian</option>
+                        <option>Flexitarian</option>
+                        <option>Pescatarian</option>
+                        <option>Ovo-vegetarian</option>
+                    </select><br />
+
+
+                    Payment details:<BR />
+
+
+                    Payment Mode:
+
+
+
+                    <input type="checkbox" name="cash" /> Cash
+                    <input type="checkbox" name="cheque" /> Checque
+                    <input type="checkbox" name="pickles" /> Demand draft
+                    <P></P>
+
+
+                    <label>DD/Cheque No.: </label>
+                    <input type="text" name="chequenum">
+
+
+                    <label>Drawn on/Bank name </label>
+                    <input type="text" name="bankname" >
+
+
+
+                        <label>Payable at </label>
+                        <input type="text" name="payableat" />
+
+
+                </div>
+            </div>
+     
+   
+</form>
+
+</article> 
+</body>
+
+</html>
